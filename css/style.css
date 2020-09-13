@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F7EC91;
+    font-family: 'Roboto';
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+}
+
+.logo img {
+    width: 280px;
+}
+
+#signature {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+#signDiv {
+    background: url('../media/signBG.png');
+    width: 500px;
+    height: 150px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#signLogo {
+    height: 55px;
+    padding-top: 20px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#signLogo img {
+    width: 185px;
+}
+
+#signUsername {
+    margin-top: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+#signTag {
+    margin-top: 5px;
+    display: flex;
+    align-content: center;
+    color: #56A1DA;
+    align-items: center;
+    justify-content: center;
+    font-weight: regular;
+}
+
+#signTag h5 {
+    background: #F7EC91;
+    border-radius: 3px;
+    padding: 2px 8px 2px 8px;
+    text-transform: uppercase;
+}
+
+input {
+    border: none;
+    outline: none;
+    font-family: 'Roboto';
+    color: #56A1DA;
+    height: 27px;
+    margin-top: 5px;
+    width: 180px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+button {
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 45px;
+    width: 153px;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;    
+    border: none;
+    outline: none;
+    font-family: 'Roboto';
+    background: #56A1DA;
+    font-size: 22px;
+    color: #F7EC91;
+    font-weight: bold;;
+}
+
+.ifIns {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.ifIns label {
+    font-weight: bold;
+    color: #56A1DA;
+    font-size: 18px;
+
+}
