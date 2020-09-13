@@ -27,6 +27,8 @@ $("#username").on("change keyup paste", function(){
     $("#signUsername h4").text(toChange);
   } else {
     swal("Maximum characters!", "You can only use up to 15 characters.");
+    var newVal = toChange.slice(0, -1);
+    $("#signUsername h4").text(toChange);
   }
   
 

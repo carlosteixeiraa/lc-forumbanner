@@ -133,3 +133,13 @@ button {
     z-index: -99999;
 }
 
+.githubIcon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.githubIcon img {
+    width: 32px;
+}
+
