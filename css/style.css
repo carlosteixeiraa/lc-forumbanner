@@ -155,6 +155,10 @@ button {
     z-index: -99999;
 }
 
+.sideLemon img {
+    height: 100vh;
+}
+
 .githubIcon {
     position: fixed;
     top: 20px;
