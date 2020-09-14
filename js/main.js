@@ -63,12 +63,7 @@ $("#tagcolor").focus(function() {
     $('#tagcolor').val('#');
   }
 
-
 });
-
-
-
-var notifier = new AWN();
 
 
 $("#tagcolor").on("change keyup paste", function(){
@@ -80,6 +75,7 @@ $("#tagcolor").on("change keyup paste", function(){
       $("#signTag h5").css('background', toChange);
     } else if(toChange.length == 7) {
       swal("Wrong colorcode!", "Please use a valid hex colorcode.");
+      $('#tagcolor').val('#');
     }
 
 
