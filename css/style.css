@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-
 .webfont {
     font-family: 'Roboto';
 }
 
-
 * {
     margin: 0;
+    font-family: 'Roboto';
     padding: 0;
 }
 
