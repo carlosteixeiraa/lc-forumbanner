@@ -79,7 +79,7 @@ $("#tagcolor").on("change keyup paste", function(){
       $(".colorprev").css('color', toChange);
       $("#signTag h5").css('background', toChange);
     } else if(toChange.length == 7) {
-      notifier.alert('Please use a valid colorcode.');
+      swal("Wrong colorcode!", "Please use a valid hex colorcode.");
     }
 
 
