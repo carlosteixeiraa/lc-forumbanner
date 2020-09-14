@@ -33,6 +33,14 @@ $("#username").on("change keyup paste", function(){
 });
 
 
+function checkHex (hex) {
+  var reg = /^#[0-9A-F]{6}$/i; 
+
+  return reg.test(hex);
+
+}
+
+
 $("#tag").on("change keyup paste", function(){
 
   var toChange = $('#tag').val();
@@ -42,4 +50,37 @@ $("#tag").on("change keyup paste", function(){
   } else {
     swal("Maximum characters!", "You can only use up to 15 characters.");
   }
+});
+
+$("#tagcolor").focus(function() {
+
+  var cont = $('#tagcolor').val();
+  //console.log(cont);
+
+  if(cont.length > 0) {
+    return true;
+  } else {
+    $('#tagcolor').val('#');
+  }
+
+
+});
+
+
+
+var notifier = new AWN();
+
+
+$("#tagcolor").on("change keyup paste", function(){
+
+  var toChange = $('#tagcolor').val();
+
+    if(checkHex(toChange) && toChange.length == 7) {
+      $(".colorprev").css('color', toChange);
+      $("#signTag h5").css('background', toChange);
+    } else if(toChange.length == 7) {
+      notifier.alert('Please use a valid colorcode.');
+    }
+
+
 });

@@ -32,7 +32,7 @@ body {
     align-content: center;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 45vh;
 }
 
 #signDiv {
@@ -79,7 +79,7 @@ body {
     background: #F7EC91;
     border-radius: 3px;
     font-size: 16px;
-    padding: 4px 12px 4px 12px;
+    padding: 2px 22px 2px 22px;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -107,10 +107,28 @@ button {
     border-radius: 2px;    
     border: none;
     outline: none;
+    margin-top: -50px;
     font-family: 'Roboto';
     background: #56A1DA;
     font-size: 22px;
     color: #F7EC91;
+    font-weight: bold;;
+}
+
+.submitinv {
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 45px;
+    width: 153px;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;    
+    border: none;
+    outline: none;
+    font-family: 'Roboto';
+    background: #56A1DA;
+    font-size: 22px;
+    color: #F7EC91;
+    opacity: 0;
     font-weight: bold;;
 }
 
@@ -147,3 +165,11 @@ button {
     width: 32px;
 }
 
+.martop {
+    margin-top: 20px;
+}
+
+.colorprev {
+    margin-left: -20px;
+    color: #F7EC91;
+}   

@@ -1,9 +1,11 @@
 <html lang="en">
 
 <head>
-    <title>LC | Forum Banner Creator</title>
+    <title>Forum Banner Creator</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/hover-min.css" />
+    <link rel="stylesheet" href="css/notifications.css" />
+    <link rel="icon" type="image/png" href="media/lc-icon.png" />
 </head>
 
 <body>
@@ -27,10 +29,21 @@
                     <label for="username">USERNAME</label><br>
                     <input type="text" maxlength="16" id="username" name="username" placeholder="RandomPlayer" autocomplete="off">
                 </div>
-                <button id="download" class="hvr-buzz">SUBMIT</button>
+                <button class="hvr-buzz submitinv">SUBMIT</button>
                 <div class="tag hvr-grow">
                     <label for="tag">TAG</label><br>
                     <input type="text" maxlength="16" id="tag" name="tag" placeholder="Player" autocomplete="off">
+                </div>           
+            </div>
+            <div class="ifIns martop">
+                <div class="username hvr-grow">
+                    <label for="font">USERNAME FONT</label><br>
+                    <input type="text" maxlength="16" id="font" name="font" placeholder="Roboto" autocomplete="off" disabled>
+                </div>
+                <button id="download" class="hvr-buzz">SUBMIT</button>
+                <div class="tag hvr-grow">
+                    <label for="tagcolor">TAG COLOR</label><br>
+                    <input oninput="this.value = this.value.toUpperCase()" type="text" maxlength="7" id="tagcolor" name="tagcolor" placeholder="#F7EC91" autocomplete="off"> <span class="colorprev">☁</span>
                 </div>           
             </div>
 
@@ -43,6 +56,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/dom-to-image.min.js"></script>
     <script src="js/FileSaver.min.js"></script>
+    <script src="js/index.var.js"></script>
     <script src="js/sweetalert.min.js"></script>
     <script src="js/main.js"></script>
 </body>
