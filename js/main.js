@@ -81,7 +81,7 @@ $("#tagcolor").on("change keyup paste", function(){
     if(checkHex(toChange) && toChange.length == 7) {
       $(".colorprev").css('color', toChange);
       $("#signTag h5").css('background', toChange);
-      var result = darkOrLight(toChange, '#56A1DA', '#000000');
+      var result = darkOrLight(toChange, '#FFFFFF', '#56A1DA');
       $("#signTag h5").css('color', result);
     } else if(toChange.length == 7) {
       swal("Wrong colorcode!", "Please use a valid hex colorcode.");
